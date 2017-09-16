@@ -1,17 +1,13 @@
 $( window ).scroll( function() {
 	if ( $( this ).scrollTop() > 200) {
 		$('header').addClass("scrolled");
-		$('.mobile').css("top", "2.7em");
+		$('.mobile').addClass("scrolled-menu");
 	} else {
 		$('header').removeClass("scrolled");
-		$('.mobile').css("top", "4em");
+		$('.mobile').removeClass("scrolled-menu");
 	}
 });
 
 $(".menu-icon").click( function() {
-	$(".page-header__nav-list").toggleClass("mobile")	
-		// $(".page-header__nav-list").removeClass("mobile");
-	// } else {
-	// $(".page-header__nav-list").addClass("mobile");
-	// }
+	$(".page-header__nav-list").toggleClass("mobile")
 });
