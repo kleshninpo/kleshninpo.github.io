@@ -1,0 +1,45 @@
+@color_1: rgba(255, 255, 255, 0.8);
+@background_color_1: #3C3352;
+
+body {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	background-color: red;
+	>* {
+		display: flex;
+	}
+}
+.page-header {
+	display: flex;
+	width: 70%;
+	border: 1px solid white;
+	justify-content: space-between;
+}
+.page-header__nav {
+	display: flex;
+}
+.main-content {
+	>* {
+		display: flex;
+	}
+}
+.header-container {
+	background-color: @background_color_1;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.page-header__nav-list {
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+.page-header__nav-list__item {
+	a {
+		display: block;
+		color: @color_1;
+		padding: 25px 40px;
+	}
+}
