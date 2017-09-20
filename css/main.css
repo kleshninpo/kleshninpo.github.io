@@ -272,6 +272,7 @@
   	justify-content: space-between;
   	flex-flow: row wrap;
   	padding: 2em;
+    margin-bottom: 5em;
   }
   .contacts legend {
   	width: 100%;
@@ -326,11 +327,49 @@
   	justify-content: space-between;
   	color: #fff;
   }
+  .page-footer a {
+  	color: #fff;
+  	text-decoration: none;
+  }
   .page-footer h2 {
   	font-size: 2em;
-  	font-weight: 300;
+  	font-weight: 400;
   	width: 100%;
   	text-align: center;
+  }
+  .page-footer__contacts {
+  	margin-left: 5em;
+  }
+  .page-footer__contacts > h2 {
+  	text-align: left;
+  	margin-left: -1.5em;
+  }
+  .page-footer__contacts a {
+  	position: relative;
+  } 
+  .page-footer__contacts p {
+  	font-size: 1.5em;
+  	font-weight: 300;
+  }
+  .page-footer__contacts a::before {
+  	content:"";
+  	width: 1.7em;
+  	height: 3em;
+  	position: absolute;
+  	top: -1em;
+  	left: -2em;
+  }
+  .page-footer__contacts__mail::before {
+  	background: url("../img/mailing.svg") center center no-repeat;
+  }
+  .page-footer__contacts__mail:hover::before {
+  	background: url("../img/mailing-active.svg") center center no-repeat;;
+  }
+  .page-footer__contacts__phone::before {
+  	background: url("../img/phone.svg") center center no-repeat;
+  }
+  .page-footer__contacts__phone:hover::before {
+  	background: url("../img/phone-active.svg") center center no-repeat;
   }
   .page-footer__social-list {
   	display: flex;
