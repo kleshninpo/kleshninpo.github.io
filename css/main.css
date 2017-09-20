@@ -316,25 +316,55 @@
   }
   .footer-container {
   	width: 100%;
-  	min-height: 20em;
   	background-color: #3C3352;
+  	justify-content: center;
   }
   .page-footer {
   	width: 65%;
-  	min-height: 20em;
+  	min-height: 13em;
   	display: flex;
+  	justify-content: space-between;
+  	color: #fff;
+  }
+  .page-footer h2 {
+  	font-size: 2em;
+  	font-weight: 300;
+  	width: 100%;
+  	text-align: center;
   }
   .page-footer__social-list {
   	display: flex;
-  	flex-direction: column;
   	list-style: none;
   }
-  .page-footer__social-list a {
+  .page-footer__social-list li > a {
   	display: block;
-  	width: 5em;
-  	height: 5em;
-  	background: red;
+  	width: 4em;
+  	height: 4em;
+  	border: 2px solid #fff;
   	border-radius: 50%;
+  	margin-right: 2em;
+  	background: url("../img/git.svg") center center no-repeat;
+  	background-size: 60%;
+  }
+  .page-footer__social-list li:nth-of-type(2) a {
+  	background: url("../img/vk.svg") center center no-repeat;
+  	background-size: 60%;
+  }
+  .page-footer__social-list li:nth-of-type(3) a {
+  	background: url("../img/codepen.svg") center center no-repeat;
+  	background-size: 60%;
+  }
+  .page-footer__social-list li > a:hover {
+  	background: url("../img/git-active.svg") center center no-repeat #fff;
+  	background-size: 60%;
+  }
+  .page-footer__social-list li:nth-of-type(2) > a:hover {
+  	background: url("../img/vk-active.svg") center center no-repeat #fff;
+  	background-size: 60%;
+  }
+  .page-footer__social-list li:nth-of-type(3) > a:hover {
+  	background: url("../img/codepen-active.svg") center center no-repeat #fff;
+  	background-size: 60%;
   }
   @media screen and (min-width: 1100px) and (max-width: 1400px) {
       .main-screen__content__about ul {
