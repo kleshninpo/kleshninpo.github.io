@@ -27,7 +27,7 @@
       <div class="main-screen__content">
         <img src="./img/photo.jpg" alt="Клешнин Павел - фото">
         <div class="main-screen__content__about">
-        <p>Меня зовут Павел, мне 25 лет, я начинающий <span class="underline">HTML-верстальщик</span>/<span class="underline">Frontend-разработчик</span>.</p>
+        <p>Меня зовут Павел, мне 25 лет, я начинающий <span class="underline">HTML-верстальщик</span>/<span class="underline">Frontend-разработчик.</span> Живу в Москве и в данный момент нахожусь в поиске работы. Если мои работы вас заинтересовали, пожалуйста, свяжитесь со мной удобным вам способом.</p>
           <span>Знаю, изучаю и использую:</span>
           <ul>
             <li>HTML 5</li>
@@ -86,10 +86,33 @@
     </div>
 
     <form method="post" class="contacts">
-      <input id="name" type="text" placeholder="Имя">
-      <input id="mail" type="mail" placeholder="e-mail">
-      <input id="comment" type="textarea">
+      <legend>Контакты:</legend>
+      <input id="name" class="contacts__name" type="text" placeholder="Имя">
+      <input id="mail" class="contacts__mail" type="mail" placeholder="e-mail">
+      <textarea id="comment" class="contacts__comment" type="textarea" placeholder="Сообщение" rows="8" cols="10"></textarea>
+      <button type="submit">Отправить</button>
     </form>
+
+    <div class="footer-container">
+      <footer class="page-footer">
+        <section class="page-footer__social">
+          <ul class="page-footer__social-list">
+            <li class="page-footer__social-list__item">
+              <a href="#"></a>
+            </li>
+            <li class="page-footer__social-list__item">
+              <a href="#"></a>
+            </li>
+            <li class="page-footer__social-list__item">
+              <a href="#"></a>
+            </li>
+            <li class="page-footer__social-list__item">
+              <a href="#"></a>
+            </li>
+          </ul>
+        </section>
+      </footer>
+    </div>
 
     <script src="./js/script.js"></script>
   </body>

@@ -150,6 +150,10 @@
       padding: 1em;
       justify-content: space-between;
   }
+  .portfolio__container h1 {
+  	font-size: 4em;
+  	text-align: center;
+  }
   .portfolio__elem-group {
       display: flex;
       width: 100%;
@@ -199,6 +203,7 @@
   	width: 100%;
   	background-color: rgba(53, 151, 104, 1);
   	color: #fff;
+  	margin: 3em 0;
   }
   .features {
   	display: flex;
@@ -208,17 +213,15 @@
   	padding-bottom: 4em;
   }
   .features__feature {
-  	padding: 10em 1em 0 1em;
+  	padding: 15em 1em 0 1em;
   	width: 33%;
   	position: relative;
-  	/*display: flex;*/
-  	/*flex-direction: column;*/
-  	/*align-items: center;*/
   	cursor: pointer;
-  	/*flex-wrap: wrap;*/
   }
   .features__feature h2 {
   	font-size: 2em;
+  	width: 100%;
+  	text-align: center;
   }
   .features__feature p {
   	font-size: 1.3em;
@@ -227,34 +230,42 @@
     -webkit-hyphens: auto;
     hyphens: auto;
   }
+  .features__feature:hover::before {
+  	border-color: rgba(53, 151, 104, 1);
+  }
   .features__feature:first-child:hover::before {
-  	background: url("../img/ie-white.svg") no-repeat;
+  	background: url("../img/ie-green.svg") center center no-repeat #FFED8F;
+  	background-size: 53%;
   }
   .features__feature:nth-child(2):hover::before {
-  	background: url("../img/responsive-white.svg") no-repeat;
-  	background-size: 100%;
+  	background: url("../img/responsive-green.svg") center center no-repeat #FFED8F;
+  	background-size: 53%;
   }
   .features__feature:last-child:hover::before {
-  	background: url("../img/list-white.svg") no-repeat;
+  	background: url("../img/list-green.svg") center center no-repeat #FFED8F;
+  	background-size: 53%;
   }
   .features__feature::before {
   	position: absolute;
   	top: 15%;
   	left: 50%;
-  	margin-left: -2.5em;
+  	margin-left: -5em;
   	content: "";
-  	width: 5em;
-  	height: 5em;
-  	background: url("../img/list.svg") no-repeat;
-  	background-size: 100%;
+  	width: 10em;
+  	height: 10em;
+  	background: url("../img/list.svg") center center no-repeat;
+  	background-size: 50%;
+  	border: 1px solid #FFED8F;
+  	border-radius: 50%;
+  	transition: all .5s;
   }
   .features__feature:first-child::before {
-  	background: url("../img/ie.svg") no-repeat;
-  	background-size: 100%;
+  	background: url("../img/ie.svg") center center no-repeat;
+  	background-size: 50%;
   }
   .features__feature:nth-child(2)::before {
-  	background: url("../img/responsive.svg") no-repeat;
-  	background-size: 100%;
+  	background: url("../img/responsive.svg") center center no-repeat;
+  	background-size: 50%;
   }
   .contacts {
   	width: 65%;
@@ -262,14 +273,68 @@
   	flex-flow: row wrap;
   	padding: 2em;
   }
+  .contacts legend {
+  	width: 100%;
+  	text-align: center;
+  	font-size: 5em;
+  }
   .contacts input {
   	padding: 1em;
   	font-size: 1.5em;
   }
-  @media screen and (min-width: 2000px) {
-      .main-screen__content {
-          padding-bottom: 2em;
-      }
+  .contacts__name, .contacts__mail {
+  	width: 45%;
+  	margin: 3em 0;
+  }
+  .contacts__comment {
+  	width: 100%;
+  	margin-bottom: 3em;
+  	padding: 1em;
+  	font-size: 1.5em;
+  }
+  .contacts button {
+  	padding: 1em 2em;
+  	font-size: 1.7em;
+  	border: 1px solid gray;
+  	border-radius: .2em;
+  	background: rgba(53, 151, 104, 0.8);
+  	cursor: pointer;
+  	color: #fff;
+  }
+  .contacts button:hover {
+  	background: rgba(53, 151, 104, 1);
+  }
+  .contacts button:active {
+  	box-shadow: inset 0px 0px 2px 1px black;
+  }
+  .contacts input, .contacts__comment {
+  	border-color: #A7D46F;
+  	border-radius: .2em;
+  	box-shadow: none;
+  	background-color: rgba(255, 237, 143, 0.3);
+
+  }
+  .footer-container {
+  	width: 100%;
+  	min-height: 20em;
+  	background-color: #3C3352;
+  }
+  .page-footer {
+  	width: 65%;
+  	min-height: 20em;
+  	display: flex;
+  }
+  .page-footer__social-list {
+  	display: flex;
+  	flex-direction: column;
+  	list-style: none;
+  }
+  .page-footer__social-list a {
+  	display: block;
+  	width: 5em;
+  	height: 5em;
+  	background: red;
+  	border-radius: 50%;
   }
   @media screen and (min-width: 1100px) and (max-width: 1400px) {
       .main-screen__content__about ul {
