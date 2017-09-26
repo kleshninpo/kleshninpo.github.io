@@ -20,6 +20,7 @@
       font-family: "Alegreya Sans";
       margin: 0;
       padding: 0;
+      font-size: 20px;
   }
   .page-header__container {
       background-color: #3C3352;
@@ -55,8 +56,8 @@
   }
   .page-header__logo {
       font-family: "Alegreya Sans";
+      font-size: 1.6em;
       font-weight: 800;
-      font-size: 2em;
       color: #fff;
       opacity: 0.8;
       align-self: center;
@@ -75,13 +76,13 @@
   .page-header__nav-list.mobile {
   	width: 100%;
   	background-color: #3C3352;
-  	font-size: 0.8em;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
   }
   .page-header__nav-list__item a {
       display: block;
-      font-size: 1.3em;
       color: rgba(255, 255, 255, 0.8);
       padding: 0.5em;
+      font-size: 1.2em;
   }
   .page-header__nav-list__item a:hover {
       color: #FFED8F;
@@ -107,15 +108,14 @@
     display: flex;
     flex-flow: row wrap;
     align-items: flex-start;
-    font-size: 1.3em;
     padding-right: 2.5em;
     padding-bottom: 1.5em;
     margin-right: 2.5em;
     border-right: 1px solid #3C3352;
-    /*flex-direction: column;*/
   }
   .main-screen__content__info > span {
-    margin: 0 1em 0.5em 1em;
+    margin-bottom: 0.5em;
+    padding: 0 1.5em;
     position: relative; 
   }
   .main-screen__content__info > span::before {
@@ -124,7 +124,7 @@
     width: 1em;
     height: 1em;
     top: 0;
-    left: -1.5em;
+    left: 0em;
   }
   .main-screen__content__info > .name::before {
     background: url("../img/user.svg") center center no-repeat;
@@ -142,8 +142,13 @@
     background: url("../img/location.svg") center center no-repeat;
     background-size: 100%;
   }
-  .main-screen__content__info > img {
-    width: 200px;
+  .main-screen__content__info .img-container {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5em;
+  }
+  .main-screen__content__info img {
+    width: 10em;
     border-radius: 50%;
     margin-bottom: 1.5em;
   }
@@ -151,18 +156,15 @@
     
   } 
   .main-screen__content__about > p {
-      font-size: 1.6em;
       margin-top: 0;
   }
   .main-screen__content__about > span {
-      font-size: 1.3em;
   }
   .main-screen__content__about ul {
   }
   .main-screen__content__about li {
       list-style: none;
       position: relative;
-      font-size: 1.6em;
   }
   .main-screen__content__about li::before {
       content: "";
@@ -188,7 +190,6 @@
       justify-content: space-between;
   }
   .portfolio__container h1 {
-  	font-size: 4em;
   	text-align: center;
   }
   .portfolio__elem-group {
@@ -256,12 +257,10 @@
   	cursor: pointer;
   }
   .features__feature h2 {
-  	font-size: 2em;
   	width: 100%;
   	text-align: center;
   }
   .features__feature p {
-  	font-size: 1.3em;
   	-ms-hyphens: auto;
     -moz-hyphens: auto;
     -webkit-hyphens: auto;
@@ -305,8 +304,8 @@
   	background-size: 50%;
   }
   .contacts {
-  	width: 65%;
-  	justify-content: space-between;
+  	width: 70%;
+  	justify-content: center;
   	flex-flow: row wrap;
   	padding: 2em;
     margin-bottom: 5em;
@@ -314,30 +313,29 @@
   .contacts legend {
   	width: 100%;
   	text-align: center;
-  	font-size: 5em;
+    font-size: 2em;
+    margin-bottom: 0.5em;
   }
   .contacts input {
   	padding: 1em;
-  	font-size: 1.5em;
   }
   .contacts__name, .contacts__mail {
-  	width: 45%;
-  	margin: 3em 0;
+  	width: 100%;
+  	margin-bottom: 2em;
   }
   .contacts__comment {
   	width: 100%;
   	margin-bottom: 3em;
   	padding: 1em;
-  	font-size: 1.5em;
   }
   .contacts button {
   	padding: 1em 2em;
-  	font-size: 1.7em;
   	border: 1px solid gray;
   	border-radius: .2em;
   	background: rgba(53, 151, 104, 0.8);
   	cursor: pointer;
   	color: #fff;
+    margin: 0 auto;
   }
   .contacts button:hover {
   	background: rgba(53, 151, 104, 1);
@@ -360,8 +358,10 @@
   .page-footer {
   	width: 65%;
   	min-height: 13em;
+    padding: 1.5em;
   	display: flex;
   	justify-content: space-between;
+    align-items: center;
   	color: #fff;
   }
   .page-footer a {
@@ -369,24 +369,23 @@
   	text-decoration: none;
   }
   .page-footer h2 {
-  	font-size: 2em;
   	font-weight: 400;
   	width: 100%;
   	text-align: center;
   }
   .page-footer__contacts {
-  	margin-left: 5em;
+  	/*margin-left: 5em;*/
   }
   .page-footer__contacts > h2 {
   	text-align: left;
-  	margin-left: -1.5em;
+  	/*margin-left: -1.5em;*/
   }
   .page-footer__contacts a {
   	position: relative;
   } 
   .page-footer__contacts p {
-  	font-size: 1.5em;
   	font-weight: 300;
+    margin-left: 2em;
   }
   .page-footer__contacts a::before {
   	content:"";
@@ -411,14 +410,15 @@
   .page-footer__social-list {
   	display: flex;
   	list-style: none;
+    padding: 0;
   }
   .page-footer__social-list li > a {
   	display: block;
-  	width: 4em;
-  	height: 4em;
+  	width: 3em;
+  	height: 3em;
   	border: 2px solid #fff;
   	border-radius: 50%;
-  	margin-right: 2em;
+  	margin-right: 1em;
   	background: url("../img/git.svg") center center no-repeat;
   	background-size: 60%;
   }
@@ -426,9 +426,10 @@
   	background: url("../img/vk.svg") center center no-repeat;
   	background-size: 60%;
   }
-  .page-footer__social-list li:nth-of-type(3) a {
+  .page-footer__social-list li:last-of-type a {
   	background: url("../img/codepen.svg") center center no-repeat;
   	background-size: 60%;
+    margin-right: 0;
   }
   .page-footer__social-list li > a:hover {
   	background: url("../img/git-active.svg") center center no-repeat #fff;
@@ -442,7 +443,10 @@
   	background: url("../img/codepen-active.svg") center center no-repeat #fff;
   	background-size: 60%;
   }
-  @media screen and (min-width: 1100px) and (max-width: 1400px) and (min-device-width: 1100px) and (max-device-width: 1400px){
+  @media screen and (min-device-width: 1100px) and (max-device-width: 1400px){
+      body {
+        font-size: 18px;
+      }
       .main-screen__content {
         width: 95%;
         padding-bottom: 4em;
@@ -453,12 +457,32 @@
       .main-screen__content__about ul {
           display: flex;
           flex-wrap: wrap;
-          margin-left: -3.6em;
+          margin-left: -2.7em;
       }
       .main-screen__content__about li {
           margin-left: 1.6em;
       }
   }
+  @media screen and (min-width: 1100px) and (max-width: 1400px) {
+      body {
+        font-size: 18px;
+      }
+      .main-screen__content {
+        width: 95%;
+        padding-bottom: 4em;
+      }
+      .main-screen__content__about {
+        max-width: 65%;
+      }
+      .main-screen__content__about ul {
+          display: flex;
+          flex-wrap: wrap;
+          margin-left: -2.7em;
+      }
+      .main-screen__content__about li {
+          margin-left: 1.6em;
+      }
+    }
   @media screen and (max-width: 1100px) {
       .main-screen__content {
         width: 90%;
@@ -466,7 +490,7 @@
       .main-screen__content__about ul {
           display: flex;
           flex-wrap: wrap;
-          margin-left: -3.6em;
+          margin-left: -2.7em;
       }
       .main-screen__content__about ul li {
       	margin-left: 1.5em;
@@ -481,7 +505,41 @@
       	min-width: 60%;
       }
   }
-  @media screen and (min-width: 768px) and (max-width: 1100px) and (min-device-width: 768px) and (max-device-width: 1100px){
+  @media screen and (min-width: 768px) and (max-width: 1100px) {
+    body {
+      font-size: 18px;
+      }
+      .page-header {
+        width: 100%;
+        justify-content: space-between;
+      }
+      .main-screen__content__about {
+          width: 80%;
+      }
+      .portfolio__elem-group {
+        flex-wrap: wrap;
+      }
+      .features {
+        width: 100%;
+      
+      }
+      .page-footer {
+        width: 100%;
+      
+      }
+      .contacts {
+        width: 100%;
+      
+      }
+  }
+  @media screen and (min-device-width: 768px) and (max-device-width: 1100px){
+      body {
+        font-size: 18px;
+      }
+      .page-header {
+        width: 100%;
+        justify-content: space-between;
+      }
       .main-screen__content__about {
           width: 80%;
       }
@@ -490,15 +548,15 @@
       }
       .features {
         width: 100%;
-        font-size: 0.6em;
+      
       }
       .page-footer {
         width: 100%;
-        font-size: 0.6em;
+      
       }
       .contacts {
         width: 100%;
-        font-size: 0.6em;
+      
       }
   }
   @media screen and (max-width: 768px) {
@@ -513,18 +571,14 @@
       	top: 2.7em;
       }
       .page-header__logo {
-          font-size: 1.2em;
           margin: 0 auto;
       }
       .page-header__nav-list {
           position: absolute;
-          top: -1000px;
+          top: -100px;
           left: 0;
           width: 100%;
           opacity: 1;
-      }
-      .page-header__nav-list__item a {
-      	font-size: 18px;
       }
       .page-header__nav-list.mobile {
       	position: absolute;
@@ -559,10 +613,13 @@
         margin-right: 2em;
         margin-left: 0;
         min-width: 7em;
-        font-size: 0.8em;
+      
+      }
+      .main-screen__content .img-container {
+        width: 100%;
       }
       .main-screen__content img {
-      	width: 100%;
+        margin: 0 auto;
       }
       .main-screen__content {
           width: 95%;
@@ -570,48 +627,156 @@
       }
       .main-screen__content__about ul li {
       	display: inline-block;
-      	margin-right: 1.2em;
+      }
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+      .features__feature {
+        width: 65%;
+        text-align: center;
       }
   }
-   @media only screen and (min-device-width: 425px) and (max-device-width: 767px) and (min-width: 425px) and (max-width: 767px) {
+  @media only screen and (min-device-width: 425px) and (max-device-width: 768px) {
     body {
-      font-size: 0.8em;
+      font-size: 16px;
     }
-    .main-screen__content p {
-          font-size: 1.2em;
+      .main-screen__content__info > span {
+        min-width: 10em;
+      }
+      .features {
+        width: 100%;
+        
+      }
+      .page-footer {
+        width: 100%;
+        
+      }
+      .contacts {
+        width: 100%;
+        
+      }
+  }
+   @media only screen and (min-width: 425px) and (max-width: 768px) {
+    body {
+      font-size: 16px;
+    }
+      .features {
+        width: 100%;
+        
+      }
+      .page-footer {
+        width: 100%;
+        
+      }
+      .contacts {
+        width: 100%;
+        
       }
    }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 425px) and (min-width: 320px) and (max-width: 425px) {
+   @media only screen and (min-device-width: 320px) and (max-device-width: 425px) {
+    body {
+      font-size: 18px;
+      }
+      .page-header {
+        font-size: 0.8em
+      }
       .main-screen__content {
         flex-flow: row wrap;
         width: 100%;
       }
       .main-screen__content__info {
-        padding-left: 1em;
-        padding-right: 1em;
+        /*padding-left: 1em;
+        padding-right: 1em;*/
         margin: 0;
         border: none;
         min-width: 100%;
       }
-      .main-screen__content p {
-          font-size: 1.4em;
-      }
-      .main-screen__content__about > span {
-          font-size: 1em;
-      }
-      .main-screen__content__about li {
-          font-size: 1.1em;
-      }
-      .features {
+     .features {
         width: 100%;
-        font-size: 0.4em;
+        
+      }
+      .features__feature {
+        width: 95%;
+        text-align: center;
       }
       .page-footer {
         width: 100%;
-        font-size: 0.4em;
+        font-size: 0.8em;
+        flex-direction: column;
+      }
+      .page-footer__contacts {
+        margin-bottom: 2em;
+      }
+      .page-footer__contacts, .page-footer__social {
+        width: 100%;
+      }
+      .page-footer__contacts > *, .page-footer__social > * {
+        margin: 0.5em auto;
+        text-align: center;
+      }
+      .page-footer__contacts > h2 {
+        text-align: center;
+      }
+      .page-footer__social-list {
+        display: flex;
+        justify-content: center;
       }
       .contacts {
         width: 100%;
-        font-size: 0.4em;
+        
+      }
+   }
+  @media only screen and (min-width: 320px) and (max-width: 425px) {
+      body {
+        font-size: 18px;
+      }
+      .page-header {
+        font-size: 0.8em
+      }
+      .main-screen__content {
+        flex-flow: row wrap;
+        width: 100%;
+      }
+      .main-screen__content__info {
+        /*padding-left: 1em;
+        padding-right: 1em;*/
+        margin: 0;
+        border: none;
+        min-width: 100%;
+      }
+      .features {
+        width: 100%;
+        
+      }
+      .features__feature {
+        width: 95%;
+        text-align: center;
+      }
+      .page-footer {
+        width: 100%;
+        font-size: 0.8em;
+        flex-direction: column;
+      }
+      .page-footer__contacts {
+        margin-bottom: 2em;
+      }
+      .page-footer__contacts, .page-footer__social {
+        width: 100%;
+      }
+      .page-footer__contacts > *, .page-footer__social > * {
+        margin: 0.5em auto;
+        text-align: center;
+      }
+      .page-footer__contacts > h2 {
+        text-align: center;
+      }
+      .page-footer__social-list {
+        display: flex;
+        justify-content: center;
+      }
+      .contacts {
+        width: 100%;
+        
       }
   }
