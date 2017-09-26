@@ -1,6 +1,5 @@
   * {
       box-sizing: border-box;
-      transition: all .2s;
   }
   body,
   body > *,
@@ -101,7 +100,7 @@
       min-height: 400px;
       padding: 10em 1em 5em 1em;
       display: flex;
-      align-items: flex-start;
+      align-items: center;
   }
   .main-screen__content__info {
     max-width: 12em;
