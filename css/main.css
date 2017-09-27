@@ -215,6 +215,7 @@ header.scrolled ~ .mobile {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 2;
 }
 .portfolio__portfolio-elem:hover > .overlay-link {
     opacity: 0.8;
