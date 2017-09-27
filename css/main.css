@@ -200,12 +200,12 @@ header.scrolled ~ .mobile {
     align-items: center;
     margin: 0.5em;
 }
-.portfolio__portfolio-elem > img {
+.portfolio__portfolio-elem img {
     width: 300px;
     height: 228px;
     min-width: 33%;
 }
-.overlay {
+.overlay-link {
     width: 100%;
     height: 100%;
     opacity: 0;
@@ -216,7 +216,7 @@ header.scrolled ~ .mobile {
     top: 0;
     left: 0;
 }
-.portfolio__portfolio-elem:hover > .overlay {
+.portfolio__portfolio-elem:hover > .overlay-link {
     opacity: 0.8;
     transition: all .3s;
 }
