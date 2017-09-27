@@ -217,7 +217,7 @@ header.scrolled ~ .mobile {
     left: 0;
     z-index: 2;
 }
-.portfolio__portfolio-elem:hover > .overlay-link {
+/*.portfolio__portfolio-elem:hover > */.overlay-link:hover {
     opacity: 0.8;
     transition: all .3s;
 }
