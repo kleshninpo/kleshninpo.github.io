@@ -38,6 +38,7 @@ body {
     align-items: center;
     padding: 1.8em 0.8em;
     transition: padding .2s;
+    z-index: 10;
 }
 header.scrolled {
     padding: 1em 0.8em;
@@ -215,9 +216,8 @@ header.scrolled ~ .mobile {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 2;
 }
-/*.portfolio__portfolio-elem:hover > */.overlay-link:hover {
+.overlay-link:hover {
     opacity: 0.8;
     transition: all .3s;
 }

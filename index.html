@@ -85,7 +85,7 @@
 
     <form method="post" class="contacts" id="contacts">
       <legend>Контакты:</legend>
-      <input id="name" class="contacts__name" type="text" placeholder="Имя">
+      <input id="name" class="contacts__name" type="text" placeholder="Имя" pattern="^[А-Яа-яЁёa-zA-Z\s]+$">
       <input id="mail" class="contacts__mail" type="mail" placeholder="e-mail">
       <textarea id="comment" class="contacts__comment" type="textarea" placeholder="Сообщение" rows="8" cols="10"></textarea>
       <button type="submit">Отправить</button>
