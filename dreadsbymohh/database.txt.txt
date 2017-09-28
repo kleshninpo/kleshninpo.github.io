@@ -1,0 +1,4 @@
+host: localhost
+database: dreadsbymohh
+user: dbm_user
+password: chen2002
