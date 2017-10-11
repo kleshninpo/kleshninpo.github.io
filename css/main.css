@@ -16,10 +16,10 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    font-family: "Alegreya Sans";
+    font-family: "Alegreya Sans", sans-serif;
     margin: 0;
     padding: 0;
-    font-size: 20px;
+    font-size: 18px;
 }
 .page-header__container {
     background-color: #3C3352;
@@ -255,15 +255,15 @@ header.scrolled ~ .mobile {
 }
 .features__feature:first-child:hover::before {
     background: url("../img/ie-green.svg") center center no-repeat #FFED8F;
-    background-size: 53%;
+    transform: scale(1.05);
 }
 .features__feature:nth-child(2):hover::before {
     background: url("../img/responsive-green.svg") center center no-repeat #FFED8F;
-    background-size: 53%;
+    transform: scale(1.05);
 }
 .features__feature:last-child:hover::before {
     background: url("../img/list-green.svg") center center no-repeat #FFED8F;
-    background-size: 53%;
+    transform: scale(1.05);
 }
 .features__feature::before {
     position: absolute;
@@ -274,21 +274,18 @@ header.scrolled ~ .mobile {
     width: 10em;
     height: 10em;
     background: url("../img/list.svg") center center no-repeat;
-    background-size: 50%;
     border: 1px solid #FFED8F;
     border-radius: 50%;
     transition: all .5s;
 }
 .features__feature:first-child::before {
     background: url("../img/ie.svg") center center no-repeat;
-    background-size: 50%;
 }
 .features__feature:nth-child(2)::before {
     background: url("../img/responsive.svg") center center no-repeat;
-    background-size: 50%;
 }
 .contacts {
-    width: 70%;
+    width: 50%;
     justify-content: center;
     flex-flow: row wrap;
     padding: 2em;

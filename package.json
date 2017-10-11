@@ -1,0 +1,28 @@
+{
+  "name": "kleshninpo.github.io",
+  "version": "1.0.0",
+  "description": "portfolio project",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kleshninpo/kleshninpo.github.io.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "kleshninpo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kleshninpo/kleshninpo.github.io/issues"
+  },
+  "homepage": "https://github.com/kleshninpo/kleshninpo.github.io#readme"
+}
