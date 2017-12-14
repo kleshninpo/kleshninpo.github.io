@@ -1,0 +1,77 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+body {
+    font-size: 20px;
+}
+form {
+    width: 500px;
+    margin: 0 auto;
+}
+span {
+    padding: 5px;
+}
+input {
+    width: 30px;
+    font-size: 16px;
+    text-align: center;
+    margin-left: -10px;
+    display: none;
+}
+.inputA {
+    display: inline-block;
+}
+.validValue {
+    background: yellow;
+}
+.invalid {
+    color: red;
+}
+.displayOn {
+    display: inline-block;
+}
+.displayOff {
+    display: none;
+}
+.visualisation {
+    width: 500px;
+    height: 50px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    text-align: center;
+}
+.numberLineContainer {
+    width: 500px;
+    display: flex;
+    margin-bottom: -55px;
+}
+.inputContainer {
+    margin-top: -40px;
+}
+.numberLine {
+    width: 500px;
+    height: 83px;
+    background: url("sprite.png") center center no-repeat;
+    background-size: 100%;
+
+}
+.lineFirst {
+    width: 130px;
+    height: 50px;
+    border-top: 3px solid orangered;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+.lineSecond {
+    width: 200px;
+    height: 50px;
+    border-top: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}

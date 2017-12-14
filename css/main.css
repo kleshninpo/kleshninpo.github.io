@@ -20,6 +20,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: 18px;
+    overflow-x: hidden;
 }
 .page-header__container {
     background-color: #3C3352;
@@ -619,6 +620,9 @@ header.scrolled ~ .mobile {
         display: flex;
         flex-direction: column;
     }
+    .main-screen__content__about {
+        width: 80%;
+    }
     .main-screen__content__info > span {
         min-width: 10em;
     }
@@ -642,6 +646,10 @@ header.scrolled ~ .mobile {
     .main-screen {
         display: flex;
         flex-direction: column;
+    }
+    .main-screen__content__about {
+        width: 80%;
+        max-width: 100%;
     }
     .features {
         width: 100%;
